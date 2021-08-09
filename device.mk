@@ -40,5 +40,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+
+#Refresh rate  overlay settings 
+PRODUCT_PACKAGES += \
+    SettingsOverlayRefreshRate
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/alioth/alioth-vendor.mk)
