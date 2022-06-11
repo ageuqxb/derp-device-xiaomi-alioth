@@ -56,5 +56,11 @@ $(call inherit-product-if-exists, vendor/GcamBSG/GcamBSG-vendor.mk)
 PRODUCT_PACKAGES += \
     SettingsOverlayRefreshRate
 
+# MatlogX
+ifeq ($(TARGET_WITH_MATLOGX),true)
+PRODUCT_PACKAGES += \
+     MatlogX
+endif
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/alioth/alioth-vendor.mk)
