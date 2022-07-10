@@ -1,4 +1,4 @@
-# Android device tree for Redmi K40 / POCO F3 / Mi 11x (alioth)
+ # Android device tree for Redmi K40 / POCO F3 / Mi 11x (alioth)
 
 ## Spec Sheet
 
@@ -19,4 +19,4 @@
 
 ## Device Picture
 
- ![POCO F3](https://i.postimg.cc/Qdr9D300/97a7349febb7c112aae46d2000c7bbae.jpg)
+ ![POCO F3](https://i.postimg.cc/jSJ8hXdV/xiaomi-poco-f3-deep-ocean-blue-07.jpg)
