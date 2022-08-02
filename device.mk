@@ -40,6 +40,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# Gcam
+$(call inherit-product-if-exists, vendor/GcamBSG/GcamBSG-vendor.mk)
+
 
 #Refresh rate  overlay settings 
 PRODUCT_PACKAGES += \
