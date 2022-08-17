@@ -53,8 +53,16 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Gcam
-$(call inherit-product-if-exists, vendor/GcamBSG/GcamBSG-vendor.mk)
+$(call inherit-product-if-exists, vendor/GcamMGC/GcamMGC-vendor.mk)
 
+
+
+#Pixel-Launcher
+
+$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
+
+PIXEL_LAUNCHER_VARIANT := ammit
+ICONS_VARIANT := dgicons
 
 #Refresh rate  overlay settings 
 PRODUCT_PACKAGES += \
