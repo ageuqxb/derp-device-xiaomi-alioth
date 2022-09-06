@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/alioth.mk
+    $(LOCAL_DIR)/derp_alioth.mk
 
 COMMON_LUNCH_CHOICES := \
-    alioth-user \
-    alioth-userdebug \
-    alioth-eng
+    derp_alioth-user \
+    derp_alioth-userdebug \
+    derp_alioth-eng

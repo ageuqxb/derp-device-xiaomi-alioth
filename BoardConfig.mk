@@ -22,10 +22,10 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_alioth
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_alioth
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/alioth_defconfig
+TARGET_KERNEL_CONFIG := alioth_defconfig
 
 # OTA assert
-TARGET_OTA_ASSERT_DEVICE := alioth,aliothin
+TARGET_OTA_ASSERT_DEVICE := alioth
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop

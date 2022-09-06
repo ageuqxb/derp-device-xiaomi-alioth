@@ -16,7 +16,7 @@ $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-derp
 
 PRODUCT_PACKAGES += \
     SettingsProviderM2012K11AC \
@@ -59,25 +59,6 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-
-# Gcam
-$(call inherit-product-if-exists, vendor/GcamMGC/GcamMGC-vendor.mk)
-
-
-
-#Pixel-Launcher
-
-#$(call inherit-product, vendor/PixelLauncher/PixelLauncher.mk)
-
-#PIXEL_LAUNCHER_VARIANT := ammit
-#ICONS_VARIANT := dgicons
-
-# MatlogX
-ifeq ($(TARGET_WITH_MATLOGX),true)
-PRODUCT_PACKAGES += \
-     MatlogX
-endif
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/alioth/alioth-vendor.mk)
